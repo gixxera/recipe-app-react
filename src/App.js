@@ -20,13 +20,13 @@ class App extends Component {
     this.setState({
       recipes: data.recipes
     });
-    console.log(this.state.recipes);
   }
+
   render() {
     return (
       <div className="app">
         <header className="app-header">
-          <h1 className="app-title">Recipe Search</h1>
+          <h1 className="app-title">Recipe Application</h1>
         </header>
         <Form getRecipe={this.getRecipe} />
         <Recipes recipes={this.state.recipes} />
